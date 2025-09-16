@@ -13,7 +13,7 @@ const Footer = () => {
               <h3 className="text-xl font-display font-semibold">RAGA Design</h3>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Crafting liquid dreams into timeless resin artistry. Transform your world with our premium custom creations.
+              Crafting liquid dreams into timeless RAGA artistry. Transform your world with our premium custom creations.
             </p>
           </div>
           
@@ -55,7 +55,7 @@ const Footer = () => {
             © 2024 RAGA Design. All rights reserved.
           </div>
           <div className="text-primary-foreground/60 text-sm">
-            Made with ❤️ for resin art lovers
+            Made with ❤️ for RAGA art lovers
           </div>
         </div>
       </div>

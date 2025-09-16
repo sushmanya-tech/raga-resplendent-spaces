@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* RAGA Design Color Palette - Inspired by Resin Flows */
+    /* RAGA Design Color Palette - Inspired by RAGA Flows */
     --background: 0 0% 100%;
     --foreground: 210 50% 15%;
 
@@ -155,15 +155,15 @@ All colors MUST be HSL.
     @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
   }
   
-  /* Resin Flow Effects */
-  .resin-flow {
+  /* RAGA Flow Effects */
+  .raga-flow {
     background: var(--gradient-primary);
     border-radius: 50px;
     position: relative;
     overflow: hidden;
   }
   
-  .resin-flow::before {
+  .raga-flow::before {
     content: '';
     position: absolute;
     top: 0;

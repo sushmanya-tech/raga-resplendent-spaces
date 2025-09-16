@@ -23,7 +23,7 @@ const Hero = () => {
               <Sparkles className="w-5 h-5 text-accent-foreground" />
             </div>
             <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Premium Resin Artistry
+              Premium RAGA Artistry
             </span>
           </div>
           
