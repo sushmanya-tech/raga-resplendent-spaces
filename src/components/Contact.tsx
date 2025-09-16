@@ -33,16 +33,8 @@ const Contact = () => {
       title: "Email Us", 
       description: "Get a detailed quote",
       action: "Send Message",
-      href: "mailto:info@ragadesign.com",
-      color: "text-secondary",
-    },
-    {
-      icon: Mail,
-      title: "Google Business", 
-      description: "Find us on Google",
-      action: "View Profile",
       href: "https://share.google/DqyrkUbmtCDTA5Tv3",
-      color: "text-accent",
+      color: "text-secondary",
     },
   ];
 
