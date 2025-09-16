@@ -24,7 +24,7 @@ const Navigation = () => {
             <img src={ragaLogo} alt="RAGA Design" className="h-10 w-auto" />
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-semibold gradient-text">
-                RAGA Design
+                RAGA DESIGNS
               </h1>
             </div>
           </div>

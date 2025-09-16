@@ -36,11 +36,19 @@ const Contact = () => {
       href: "mailto:info@ragadesign.com",
       color: "text-secondary",
     },
+    {
+      icon: Mail,
+      title: "Google Business", 
+      description: "Find us on Google",
+      action: "View Profile",
+      href: "https://share.google/DqyrkUbmtCDTA5Tv3",
+      color: "text-accent",
+    },
   ];
 
   const socialLinks = [
     { icon: Youtube, href: "https://youtube.com/@ragadesigns?si=sAMUG1hR2xIEKcSV", label: "YouTube" },
-    { icon: Facebook, href: "https://facebook.com/ragadesign", label: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/share/1DKtmN3uLs/", label: "Facebook" },
     { icon: Instagram, href: "https://www.instagram.com/raga_designs?igsh=MTY5ZGFzZGN5YWNwMg==", label: "Instagram" },
   ];
 
