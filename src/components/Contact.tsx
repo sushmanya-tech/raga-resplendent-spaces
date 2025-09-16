@@ -13,11 +13,19 @@ const Contact = () => {
       color: "text-primary",
     },
     {
+      icon: Phone,
+      title: "Alternative Number",
+      description: "Call us anytime",
+      action: "8088932026",
+      href: "tel:+918088932026",
+      color: "text-secondary",
+    },
+    {
       icon: Instagram,
       title: "Follow Us",
       description: "See our latest creations",
-      action: "@Raga_design",
-      href: "https://instagram.com/raga_design",
+      action: "@raga_designs",
+      href: "https://www.instagram.com/raga_designs?igsh=MTY5ZGFzZGN5YWNwMg==",
       color: "text-accent",
     },
     {
@@ -31,9 +39,9 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Youtube, href: "https://youtube.com/@ragadesign", label: "YouTube" },
+    { icon: Youtube, href: "https://youtube.com/@ragadesigns?si=sAMUG1hR2xIEKcSV", label: "YouTube" },
     { icon: Facebook, href: "https://facebook.com/ragadesign", label: "Facebook" },
-    { icon: Instagram, href: "https://instagram.com/raga_design", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/raga_designs?igsh=MTY5ZGFzZGN5YWNwMg==", label: "Instagram" },
   ];
 
   return (
