@@ -67,7 +67,7 @@ const Hero = () => {
               <div className="flex justify-center mb-2">
                 <Sparkles className="w-6 h-6 text-accent" />
               </div>
-              <div className="text-2xl font-bold text-accent">5+</div>
+              <div className="text-2xl font-bold text-accent">3+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
           </div>

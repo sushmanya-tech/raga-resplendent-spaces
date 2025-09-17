@@ -26,7 +26,7 @@ const Navigation = () => {
 
           {/* Company Name */}
           <div className="flex-1 text-center">
-            <h1 className="text-lg md:text-xl lg:text-2xl font-display font-semibold gradient-text">
+            <h1 className="text-xl md:text-2xl lg:text-4xl font-display font-bold gradient-text animate-glow">
               RAGA DESIGNS
             </h1>
           </div>
