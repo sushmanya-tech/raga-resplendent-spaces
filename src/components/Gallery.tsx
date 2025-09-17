@@ -1,10 +1,15 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Heart, Share2 } from "lucide-react";
+import { Eye, Heart, Share2, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import krishnaArt from "@/assets/gallery/krishna-resin-art.jpg";
 
 const Gallery = () => {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const categories = ["All", "Religious Art", "Custom Jewelry", "Furniture", "Epoxy Flooring", "Corporate Gifts"];
+
   const artworks = [
     {
       id: 1,
@@ -17,6 +22,10 @@ const Gallery = () => {
       featured: true
     }
   ];
+
+  const filteredArtworks = activeFilter === "All" 
+    ? artworks 
+    : artworks.filter(artwork => artwork.category === activeFilter);
 
   return (
     <section id="gallery" className="py-24 bg-background">
@@ -31,8 +40,33 @@ const Gallery = () => {
           </p>
         </div>
 
+        {/* Filter Menu */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex items-center gap-2 text-muted-foreground mb-2">
+            <Filter className="w-4 h-4" />
+            <span className="text-sm font-medium">Filter by category:</span>
+          </div>
+          <div className="flex flex-wrap justify-center gap-2">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={activeFilter === category ? "default" : "outline"}
+                size="sm"
+                onClick={() => setActiveFilter(category)}
+                className={`transition-all-smooth ${
+                  activeFilter === category
+                    ? "bg-primary text-primary-foreground shadow-primary"
+                    : "border-primary/20 hover:bg-primary/10"
+                }`}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+        </div>
+        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {artworks.map((artwork) => (
+          {filteredArtworks.map((artwork) => (
             <Card 
               key={artwork.id} 
               className="group hover:shadow-elegant transition-all-smooth border-0 bg-card/50 backdrop-blur-sm overflow-hidden"
