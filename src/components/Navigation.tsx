@@ -21,12 +21,14 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={ragaLogo} alt="RAGA Design" className="h-10 w-auto" />
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-display font-semibold gradient-text">
-                RAGA DESIGNS
-              </h1>
-            </div>
+            <img src={ragaLogo} alt="RAGA Design" className="h-8 w-auto md:h-10" />
+          </div>
+
+          {/* Company Name */}
+          <div className="flex-1 text-center">
+            <h1 className="text-lg md:text-xl lg:text-2xl font-display font-semibold gradient-text">
+              RAGA DESIGNS
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
