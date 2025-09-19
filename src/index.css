@@ -153,6 +153,7 @@ All colors MUST be HSL.
   /* Gradient Text */
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+    text-shadow: 0 2px 10px hsl(var(--primary) / 0.3);
   }
   
   /* RAGA Flow Effects */

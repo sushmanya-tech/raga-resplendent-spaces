@@ -21,15 +21,18 @@ const Navigation = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src={ragaLogo} alt="RAGA Design" className="h-10 w-auto md:h-12 lg:h-14" />
+          <div className="flex items-center space-x-4">
+            <img src={ragaLogo} alt="RAGA Design" className="h-12 w-auto md:h-16 lg:h-20" />
           </div>
 
           {/* Company Name */}
           <div className="flex-1 text-center">
-            <h1 className="text-xl md:text-2xl lg:text-4xl font-display font-bold gradient-text animate-glow">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-display font-bold gradient-text animate-glow tracking-wider">
               RAGA DESIGNS
             </h1>
+            <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-widest uppercase">
+              Premium Resin Art
+            </p>
           </div>
 
           {/* Desktop Navigation */}
