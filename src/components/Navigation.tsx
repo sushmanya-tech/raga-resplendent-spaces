@@ -30,9 +30,6 @@ const Navigation = () => {
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-display font-bold gradient-text animate-glow tracking-wider">
               RAGA DESIGNS
             </h1>
-            <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-widest uppercase">
-              Premium Resin Art
-            </p>
           </div>
 
           {/* Desktop Navigation */}
