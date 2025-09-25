@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Instagram, Mail, Youtube, Facebook, MapPin, Clock, Palette } from "lucide-react";
+import { Phone, Instagram, Mail, Youtube, Facebook, MapPin, Clock, Palette, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const contactMethods = [
@@ -36,6 +36,14 @@ const Contact = () => {
       href: "mailto:ragadesigns@gmail.com",
       color: "text-secondary",
     },
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      description: "Chat with us instantly",
+      action: "Send WhatsApp",
+      href: "https://wa.me/919901810658",
+      color: "text-green-500",
+    },
   ];
 
   const socialLinks = [
@@ -69,7 +77,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {contactMethods.map((method, index) => (
             <Card 
               key={index} 
