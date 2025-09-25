@@ -38,12 +38,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4 animate-glow">
-              Explore Our Art
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4 animate-glow" asChild>
+              <a href="#gallery">
+                Explore Our Art
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 hover:bg-accent hover:text-accent-foreground transition-bounce">
-              Get Quote
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 hover:bg-accent hover:text-accent-foreground transition-bounce" asChild>
+              <a href="#contact">
+                Get Quote
+              </a>
             </Button>
           </div>
           

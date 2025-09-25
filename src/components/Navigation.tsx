@@ -43,9 +43,11 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="hero" size="sm">
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
+            <Button variant="hero" size="sm" asChild>
+              <a href="tel:+919901810658">
+                <Phone className="w-4 h-4 mr-2" />
+                Call Now
+              </a>
             </Button>
           </div>
 
@@ -76,9 +78,11 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="hero" className="w-full">
-                <Phone className="w-4 h-4 mr-2" />
-                Call Now
+               <Button variant="hero" className="w-full" asChild>
+                <a href="tel:+919901810658">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call Now
+                </a>
               </Button>
             </div>
           </div>
