@@ -33,7 +33,7 @@ const Contact = () => {
       title: "Email Us", 
       description: "Get a detailed quote",
       action: "Send Message",
-      href: "https://share.google/DqyrkUbmtCDTA5Tv3",
+      href: "mailto:ragadesigns@gmail.com",
       color: "text-secondary",
     },
   ];
