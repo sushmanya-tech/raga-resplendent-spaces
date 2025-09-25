@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Instagram, Mail, Youtube } from "lucide-react";
+import { Menu, X, Phone, Instagram, Mail, Youtube, MessageCircle } from "lucide-react";
 import ragaLogo from "@/assets/raga-logo.jpg";
 
 const Navigation = () => {
@@ -43,12 +43,20 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="hero" size="sm" asChild>
-              <a href="tel:+919901810658">
-                <Phone className="w-4 h-4 mr-2" />
-                Call Now
-              </a>
-            </Button>
+            <div className="flex flex-col gap-2">
+              <Button variant="hero" size="sm" asChild>
+                <a href="tel:+919901810658">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call Now
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                <a href="https://wa.me/919901810658">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -78,10 +86,16 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-               <Button variant="hero" className="w-full" asChild>
+              <Button variant="hero" className="w-full" asChild>
                 <a href="tel:+919901810658">
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
+                </a>
+              </Button>
+              <Button variant="outline" className="w-full" asChild>
+                <a href="https://wa.me/919901810658">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
                 </a>
               </Button>
             </div>
